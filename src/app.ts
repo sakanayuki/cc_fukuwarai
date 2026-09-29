@@ -7,6 +7,7 @@ import { hitPlaced, type Placed } from './geometry';
 import { Gyro } from './gyro';
 import { ICON } from './icons';
 import { Sound } from './audio';
+import { enableDragScroll } from './dragScroll';
 
 const $ = <T extends HTMLElement>(root: ParentNode, sel: string) => root.querySelector(sel) as T;
 
@@ -19,13 +20,11 @@ export class App {
   private nextUid = 1;
   private held: Part | null = null;
   private category: CategoryId = 'eye';
-  private ghostPos = { x: 0.5, y: 0.5 };
   private resultUrl: string | null = null;
 
   // play 画面の要素
   private stage!: HTMLElement;
   private layer!: HTMLElement;
-  private ghost!: HTMLImageElement;
   private handSlot!: HTMLElement;
   private handImg!: HTMLImageElement;
   private strip!: HTMLElement;
@@ -82,7 +81,6 @@ export class App {
     this.els.clear();
     this.held = null;
     this.category = 'eye';
-    this.ghostPos = { x: 0.5, y: 0.5 };
     this.root.innerHTML = `
       <section class="screen play">
         <header class="topbar">
@@ -93,7 +91,6 @@ export class App {
           <div class="stage">
             <img class="base-img" src="${base.src}" alt="" draggable="false" />
             <div class="layer"></div>
-            <img class="ghost hidden" alt="" draggable="false" />
           </div>
         </div>
         <div class="tray">
@@ -120,10 +117,10 @@ export class App {
 
     this.stage = $(this.root, '.stage');
     this.layer = $(this.root, '.layer');
-    this.ghost = $(this.root, '.ghost');
     this.handSlot = $(this.root, '.hand-slot');
     this.handImg = $(this.handSlot, 'img');
     this.strip = $(this.root, '.strip');
+    enableDragScroll(this.strip);
 
     this.updateMute();
     this.renderTabs();
@@ -154,9 +151,6 @@ export class App {
       if (part) this.hold(part);
     });
     this.stage.addEventListener('pointerdown', (e) => this.onStagePointer(e));
-    this.stage.addEventListener('pointermove', (e) => {
-      if (this.held && (e.pointerType === 'mouse' || e.buttons)) this.moveGhost(e);
-    });
   }
 
   private updateMute() {
@@ -188,9 +182,6 @@ export class App {
     if (!quiet) this.sound.select();
     this.renderHeld();
     this.strip.querySelectorAll('.thumb').forEach((t) => t.classList.toggle('selected', (t as HTMLElement).dataset.id === part.id));
-    this.ghost.src = part.src;
-    this.placeGhost();
-    this.ghost.classList.remove('hidden');
   }
 
   private cancelHeld(silent = false) {
@@ -198,7 +189,6 @@ export class App {
     this.held = null;
     if (!silent) this.sound.cancel();
     this.strip.querySelectorAll('.thumb.selected').forEach((t) => t.classList.remove('selected'));
-    this.ghost.classList.add('hidden');
     this.renderHeld();
   }
 
@@ -218,22 +208,6 @@ export class App {
   private applyAngle(a: number) {
     if (!this.handImg) return;
     this.handImg.style.setProperty('--rot', `${a}deg`);
-    this.ghost?.style.setProperty('--rot', `${a}deg`);
-  }
-
-  // ───── ゴースト(貼る位置のプレビュー) ─────
-  private moveGhost(e: PointerEvent) {
-    const r = this.stage.getBoundingClientRect();
-    this.ghostPos = { x: (e.clientX - r.left) / r.width, y: (e.clientY - r.top) / r.height };
-    this.placeGhost();
-  }
-
-  private placeGhost() {
-    if (!this.held) return;
-    const g = this.ghost;
-    g.style.left = `${this.ghostPos.x * 100}%`;
-    g.style.top = `${this.ghostPos.y * 100}%`;
-    g.style.width = `${this.held.widthFraction * 100}%`;
   }
 
   // ───── 貼る/剥がす ─────
@@ -284,7 +258,6 @@ export class App {
     this.els.get(p.uid)?.remove();
     this.els.delete(p.uid);
     this.sound.peel();
-    this.ghostPos = { x: p.x, y: p.y };
     // 剥がしたパーツを持ち直す(カテゴリのタブも合わせる)
     this.category = p.part.category;
     this.renderTabs();
@@ -301,10 +274,10 @@ export class App {
     }
     this.showOverlay(
       `<div class="dialog">
-         <p class="dialog-ico" aria-hidden="true">${ICON.back}</p>
+         <p class="dialog-text">つくったかおが きえるけど<br />いいかな？</p>
          <div class="dialog-btns">
-           <button class="round-btn no" type="button" aria-label="いいえ">${ICON.close}</button>
-           <button class="round-btn yes" type="button" aria-label="はい">${ICON.yes}</button>
+           <button class="label-btn no" type="button"><span class="round-btn">${ICON.close}</span><span class="label">やめない</span></button>
+           <button class="label-btn yes" type="button"><span class="round-btn">${ICON.yes}</span><span class="label">さいしょへ<br />もどる</span></button>
          </div>
        </div>`,
       (ov) => {
@@ -339,9 +312,9 @@ export class App {
       `<div class="result">
          ${this.resultUrl ? `<img class="result-img" src="${this.resultUrl}" alt="" />` : ''}
          <div class="result-btns">
-           <button class="round-btn again" type="button" aria-label="もういっかい">${ICON.again}</button>
-           <button class="round-btn keep" type="button" aria-label="つづける">${ICON.play}</button>
-           ${blob ? `<button class="round-btn save" type="button" aria-label="ほぞん">${ICON.save}</button>` : ''}
+           <button class="label-btn again" type="button"><span class="round-btn">${ICON.again}</span><span class="label">もういちど<br />つくる</span></button>
+           <button class="label-btn keep" type="button"><span class="round-btn">${ICON.play}</span><span class="label">つづけて<br />あそぶ</span></button>
+           ${blob ? `<button class="label-btn save" type="button"><span class="round-btn">${ICON.save}</span><span class="label">しゃしんを<br />ほぞん</span></button>` : ''}
          </div>
        </div>`,
       (ov) => {
@@ -380,6 +353,10 @@ export class App {
     const ov = $<HTMLElement>(this.root, '.overlay');
     ov.innerHTML = html;
     ov.classList.remove('hidden');
+    // 暗い部分をタップしたら、ふくわらい画面に戻る
+    ov.onclick = (e) => {
+      if (e.target === ov) this.hideOverlay();
+    };
     bind(ov);
   }
 

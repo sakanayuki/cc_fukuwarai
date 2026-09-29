@@ -80,8 +80,10 @@ export class Gyro {
   private handle = (e: DeviceOrientationEvent) => {
     if (e.beta == null || e.gamma == null) return;
     const angle = screen.orientation?.angle ?? 0;
-    const target = tiltAngle(e.beta, e.gamma, angle);
-    if (target == null) return;
+    const tilt = tiltAngle(e.beta, e.gamma, angle);
+    if (tilt == null) return;
+    // シールは端末の傾きと逆向きに回す(端末を右に傾けるとシールは左へ回り、床に対して水平を保つ体感)
+    const target = -tilt;
     this.active = true;
     // ローパスでガタつきを抑える
     this.angle = this.angle + (target - this.angle) * 0.25;
