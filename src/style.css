@@ -446,14 +446,20 @@ img {
 }
 
 .strip {
-  display: flex;
+  /* 2段に並べる。1つのスクロール領域なので、2段は一緒に横スクロールする */
+  display: grid;
+  grid-auto-flow: column;
+  grid-template-rows: repeat(2, 68px);
+  grid-auto-columns: max-content;
   gap: 8px;
   overflow-x: auto;
   overflow-y: hidden;
   padding: 6px 2px 6px;
   scrollbar-width: none;
-  touch-action: none; /* スクロールは dragScroll.ts が担当(1回のスワイプで大きく進む) */
-  min-height: 78px;
+  touch-action: pan-x;
+  scroll-snap-type: x proximity;
+  -webkit-overflow-scrolling: touch;
+  min-height: 160px;
 }
 .thumb {
   flex: 0 0 auto;
@@ -468,6 +474,7 @@ img {
   align-items: center;
   justify-content: center;
   overflow: hidden;
+  scroll-snap-align: start;
 }
 .thumb img {
   max-height: 100%;
@@ -603,12 +610,16 @@ img {
     padding-top: calc(var(--safe-top) + 10px);
   }
   .strip {
+    display: flex;
+    grid-template-rows: none;
     flex: 1;
     min-height: 0;
     flex-wrap: wrap;
     align-content: flex-start;
     overflow-x: hidden;
     overflow-y: auto;
+    touch-action: pan-y;
+    scroll-snap-type: none;
   }
   .thumb {
     height: 64px;

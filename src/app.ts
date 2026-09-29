@@ -7,7 +7,6 @@ import { hitPlaced, type Placed } from './geometry';
 import { Gyro } from './gyro';
 import { ICON } from './icons';
 import { Sound } from './audio';
-import { enableDragScroll } from './dragScroll';
 
 const $ = <T extends HTMLElement>(root: ParentNode, sel: string) => root.querySelector(sel) as T;
 
@@ -120,7 +119,6 @@ export class App {
     this.handSlot = $(this.root, '.hand-slot');
     this.handImg = $(this.handSlot, 'img');
     this.strip = $(this.root, '.strip');
-    enableDragScroll(this.strip);
 
     this.updateMute();
     this.renderTabs();
