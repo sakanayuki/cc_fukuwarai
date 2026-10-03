@@ -25,6 +25,15 @@ SHEETS = {
     "eye": ("3-eye.jpg", 900, 4, True, 3.5, 22, False),  # 細い弧(アニメ目の眉の残骸)は除外
     "nose": ("4-nose.jpg", 1500, 10, True, None, 22, True),
 }
+# 左右ペアにするカテゴリ。ペアにならない(相手がいない)パーツは削除する。
+#   読み順で隣り合う2つを、鏡像の一致度が高ければペアにする(自動)。
+#   シート上で縦に並んでいる/形が非対称でも組になっているものは EXTRA_PAIRS で指定する(ファイル番号)。
+PAIRED = {"eye", "brow"}
+EXTRA_PAIRS = {
+    "eye": [(25, 28), (33, 34), (39, 40), (50, 51)],
+    "brow": [],
+}
+PAIR_THRESHOLD = 0.6
 OUTLINE = 5  # シールの縁の太さ(px)
 TARGET_LONG_EDGE = 360  # 出力の長辺上限
 
@@ -51,6 +60,57 @@ def convex_hull(m: np.ndarray) -> np.ndarray:
     img = Image.new("L", (m.shape[1], m.shape[0]), 0)
     ImageDraw.Draw(img).polygon(poly, fill=255)
     return np.array(img) > 0
+
+
+def _norm_mask(a: np.ndarray, n: int = 64) -> np.ndarray:
+    ys, xs = np.nonzero(a)
+    a = a[ys.min() : ys.max() + 1, xs.min() : xs.max() + 1]
+    return np.array(Image.fromarray((a * 255).astype(np.uint8)).resize((n, n), Image.BILINEAR)) > 128
+
+
+def mirror_score(a: np.ndarray, b: np.ndarray) -> float:
+    """左右反転した a と b の形の一致度(0..1)。大きさの近さも掛ける。"""
+    (ha, wa), (hb, wb) = a.shape, b.shape
+    ma, mb = _norm_mask(a)[:, ::-1], _norm_mask(b)
+    iou = (ma & mb).sum() / max(1, (ma | mb).sum())
+    return float(iou * min(wa, wb) / max(wa, wb) * min(ha, hb) / max(ha, hb))
+
+
+def assign_pairs(name: str, meta: list, shapes: list, out_dir: Path) -> list:
+    """左右ペアを決め、ペアにならないパーツのファイルを削除する。meta には pair(組の番号) を付ける。"""
+    n = len(meta)
+    partner: dict[int, int] = {}
+    for a, b in EXTRA_PAIRS.get(name, []):
+        partner[a - 1], partner[b - 1] = b - 1, a - 1
+    rest = [i for i in range(n) if i not in partner]
+    k = 0
+    while k < len(rest):
+        i = rest[k]
+        if k + 1 < len(rest):
+            j = rest[k + 1]
+            if mirror_score(shapes[i], shapes[j]) >= PAIR_THRESHOLD:
+                partner[i], partner[j] = j, i
+                k += 2
+                continue
+        k += 1
+    kept, pair_no, dropped = [], 0, []
+    seen: set[int] = set()
+    for i in range(n):
+        if i not in partner:
+            dropped.append(i + 1)
+            (out_dir / meta[i]["file"]).unlink(missing_ok=True)
+            continue
+        if i in seen:
+            continue
+        j = partner[i]
+        pair_no += 1
+        seen.update((i, j))
+        first, second = sorted((i, j))  # 読み順で先の方を左(上)にする
+        for side, t in enumerate((first, second)):
+            kept.append({**meta[t], "pair": pair_no, "side": side})
+    kept.sort(key=lambda m: (m["pair"], m["side"]))
+    print(f"  {name}: {pair_no} ペア / 削除(ペアなし): {dropped}")
+    return kept
 
 
 def slice_sheet(name: str, spec, src_dir: Path):
@@ -89,6 +149,7 @@ def slice_sheet(name: str, spec, src_dir: Path):
     for f in out_dir.glob("*.webp"):
         f.unlink()
     meta = []
+    shapes = []
     for idx, (sl, mask, group) in enumerate(items, start=1):
         pad = OUTLINE + 4
         y0, y1 = max(sl[0].start - pad, 0), min(sl[0].stop + pad, arr.shape[0])
@@ -121,6 +182,9 @@ def slice_sheet(name: str, spec, src_dir: Path):
         file = f"{name}-{idx:03d}.webp"
         comp.save(out_dir / file, quality=86, method=6)
         meta.append({"file": file, "w": comp.size[0], "h": comp.size[1], "srcW": w, "srcH": h})
+        shapes.append(np.array(comp.split()[3]) > 128)
+    if name in PAIRED:
+        meta = assign_pairs(name, meta, shapes, out_dir)
     return meta
 
 

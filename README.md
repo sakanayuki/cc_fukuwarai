@@ -45,6 +45,9 @@ pip install pillow numpy scipy
 python tools/slice_sheets.py
 ```
 
+目とまゆは左右のセットで真横に並べて表示します。セットの相手がいないパーツは自動で削除されます
+(読み順で隣り合う2つの鏡像の一致度で判定。縦並びなどで判定できないセットは `EXTRA_PAIRS` で指定)。
+
 ## 公開(GitHub Pages)
 
 `main` ブランチへの push で GitHub Actions(`.github/workflows/deploy.yml`)がビルドして Pages に公開します。

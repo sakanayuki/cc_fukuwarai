@@ -11,9 +11,11 @@ export interface Part {
   aspect: number;
   /** 土台の幅に対する、貼ったときの幅の割合(0..1) */
   widthFraction: number;
+  /** 左右セットの組の番号(目・まゆ)。セットのないカテゴリ(はな・くち)は undefined */
+  pair?: number;
 }
 
-type Meta = { file: string; w: number; h: number; srcW: number; srcH: number };
+type Meta = { file: string; w: number; h: number; srcW: number; srcH: number; pair?: number };
 
 export function partUrl(category: CategoryId, file: string): string {
   return `${import.meta.env.BASE_URL}parts/${category}/${file}`;
@@ -29,6 +31,7 @@ export function buildParts(meta: Record<string, Meta[]> = generated as Record<st
         src: partUrl(cat.id, m.file),
         aspect: m.h / m.w,
         widthFraction: (m.srcW / SHEET_WIDTH) * cat.scale,
+        pair: m.pair,
       });
     }
   }

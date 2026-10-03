@@ -165,12 +165,21 @@ export class App {
 
   private renderStrip() {
     const parts = PARTS_BY_CATEGORY(this.category);
-    this.strip.innerHTML = parts
-      .map(
-        (p) =>
-          `<button class="thumb${this.held?.id === p.id ? ' selected' : ''}" type="button" data-id="${p.id}" aria-label="パーツ"><img src="${p.src}" alt="" loading="lazy" decoding="async" draggable="false" /></button>`,
-      )
-      .join('');
+    const thumb = (p: Part) =>
+      `<button class="thumb${this.held?.id === p.id ? ' selected' : ''}" type="button" data-id="${p.id}" aria-label="パーツ"><img src="${p.src}" alt="" loading="lazy" decoding="async" draggable="false" /></button>`;
+    // 左右セット(目・まゆ)は、セットで真横に並べる
+    const html: string[] = [];
+    for (let i = 0; i < parts.length; i++) {
+      const p = parts[i];
+      const next = parts[i + 1];
+      if (p.pair !== undefined && next && next.pair === p.pair) {
+        html.push(`<div class="pair">${thumb(p)}${thumb(next)}</div>`);
+        i++;
+      } else {
+        html.push(thumb(p));
+      }
+    }
+    this.strip.innerHTML = html.join('');
     this.strip.scrollTo({ left: 0, top: 0 });
   }
 

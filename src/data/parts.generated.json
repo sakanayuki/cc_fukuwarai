@@ -203,630 +203,792 @@
    "w": 155,
    "h": 64,
    "srcW": 155,
-   "srcH": 64
+   "srcH": 64,
+   "pair": 1,
+   "side": 0
   },
   {
    "file": "brow-002.webp",
    "w": 155,
    "h": 63,
    "srcW": 155,
-   "srcH": 63
+   "srcH": 63,
+   "pair": 1,
+   "side": 1
   },
   {
    "file": "brow-003.webp",
    "w": 160,
    "h": 62,
    "srcW": 160,
-   "srcH": 62
+   "srcH": 62,
+   "pair": 2,
+   "side": 0
   },
   {
    "file": "brow-004.webp",
    "w": 160,
    "h": 61,
    "srcW": 160,
-   "srcH": 61
-  },
-  {
-   "file": "brow-005.webp",
-   "w": 301,
-   "h": 83,
-   "srcW": 301,
-   "srcH": 83
+   "srcH": 61,
+   "pair": 2,
+   "side": 1
   },
   {
    "file": "brow-006.webp",
    "w": 154,
    "h": 64,
    "srcW": 154,
-   "srcH": 64
+   "srcH": 64,
+   "pair": 3,
+   "side": 0
   },
   {
    "file": "brow-007.webp",
    "w": 156,
    "h": 65,
    "srcW": 156,
-   "srcH": 65
+   "srcH": 65,
+   "pair": 3,
+   "side": 1
   },
   {
    "file": "brow-008.webp",
    "w": 161,
    "h": 79,
    "srcW": 161,
-   "srcH": 79
+   "srcH": 79,
+   "pair": 4,
+   "side": 0
   },
   {
    "file": "brow-009.webp",
    "w": 160,
    "h": 79,
    "srcW": 160,
-   "srcH": 79
-  },
-  {
-   "file": "brow-010.webp",
-   "w": 301,
-   "h": 84,
-   "srcW": 301,
-   "srcH": 84
+   "srcH": 79,
+   "pair": 4,
+   "side": 1
   },
   {
    "file": "brow-011.webp",
    "w": 153,
    "h": 69,
    "srcW": 153,
-   "srcH": 69
+   "srcH": 69,
+   "pair": 5,
+   "side": 0
   },
   {
    "file": "brow-012.webp",
    "w": 156,
    "h": 70,
    "srcW": 156,
-   "srcH": 70
+   "srcH": 70,
+   "pair": 5,
+   "side": 1
   },
   {
    "file": "brow-013.webp",
    "w": 161,
    "h": 73,
    "srcW": 161,
-   "srcH": 73
+   "srcH": 73,
+   "pair": 6,
+   "side": 0
   },
   {
    "file": "brow-014.webp",
    "w": 161,
    "h": 74,
    "srcW": 161,
-   "srcH": 74
+   "srcH": 74,
+   "pair": 6,
+   "side": 1
   },
   {
    "file": "brow-015.webp",
    "w": 153,
    "h": 76,
    "srcW": 153,
-   "srcH": 76
+   "srcH": 76,
+   "pair": 7,
+   "side": 0
   },
   {
    "file": "brow-016.webp",
    "w": 155,
    "h": 77,
    "srcW": 155,
-   "srcH": 77
+   "srcH": 77,
+   "pair": 7,
+   "side": 1
   },
   {
    "file": "brow-017.webp",
    "w": 152,
    "h": 66,
    "srcW": 152,
-   "srcH": 66
+   "srcH": 66,
+   "pair": 8,
+   "side": 0
   },
   {
    "file": "brow-018.webp",
    "w": 154,
    "h": 66,
    "srcW": 154,
-   "srcH": 66
+   "srcH": 66,
+   "pair": 8,
+   "side": 1
   },
   {
    "file": "brow-019.webp",
    "w": 316,
    "h": 106,
    "srcW": 316,
-   "srcH": 106
+   "srcH": 106,
+   "pair": 9,
+   "side": 0
   },
   {
    "file": "brow-020.webp",
    "w": 323,
    "h": 120,
    "srcW": 323,
-   "srcH": 120
+   "srcH": 120,
+   "pair": 9,
+   "side": 1
   },
   {
    "file": "brow-021.webp",
    "w": 152,
    "h": 29,
    "srcW": 152,
-   "srcH": 29
+   "srcH": 29,
+   "pair": 10,
+   "side": 0
   },
   {
    "file": "brow-022.webp",
    "w": 152,
    "h": 29,
    "srcW": 152,
-   "srcH": 29
+   "srcH": 29,
+   "pair": 10,
+   "side": 1
   },
   {
    "file": "brow-023.webp",
    "w": 140,
    "h": 47,
    "srcW": 140,
-   "srcH": 47
+   "srcH": 47,
+   "pair": 11,
+   "side": 0
   },
   {
    "file": "brow-024.webp",
    "w": 139,
    "h": 47,
    "srcW": 139,
-   "srcH": 47
+   "srcH": 47,
+   "pair": 11,
+   "side": 1
   },
   {
    "file": "brow-025.webp",
    "w": 155,
    "h": 76,
    "srcW": 155,
-   "srcH": 76
+   "srcH": 76,
+   "pair": 12,
+   "side": 0
   },
   {
    "file": "brow-026.webp",
    "w": 155,
    "h": 76,
    "srcW": 155,
-   "srcH": 76
+   "srcH": 76,
+   "pair": 12,
+   "side": 1
   },
   {
    "file": "brow-027.webp",
    "w": 149,
    "h": 45,
    "srcW": 149,
-   "srcH": 45
+   "srcH": 45,
+   "pair": 13,
+   "side": 0
   },
   {
    "file": "brow-028.webp",
    "w": 141,
    "h": 42,
    "srcW": 141,
-   "srcH": 42
+   "srcH": 42,
+   "pair": 13,
+   "side": 1
   },
   {
    "file": "brow-029.webp",
    "w": 159,
    "h": 66,
    "srcW": 159,
-   "srcH": 66
+   "srcH": 66,
+   "pair": 14,
+   "side": 0
   },
   {
    "file": "brow-030.webp",
    "w": 160,
    "h": 68,
    "srcW": 160,
-   "srcH": 68
+   "srcH": 68,
+   "pair": 14,
+   "side": 1
   },
   {
    "file": "brow-031.webp",
    "w": 152,
    "h": 63,
    "srcW": 152,
-   "srcH": 63
+   "srcH": 63,
+   "pair": 15,
+   "side": 0
   },
   {
    "file": "brow-032.webp",
    "w": 151,
    "h": 63,
    "srcW": 151,
-   "srcH": 63
+   "srcH": 63,
+   "pair": 15,
+   "side": 1
   },
   {
    "file": "brow-033.webp",
    "w": 159,
    "h": 64,
    "srcW": 159,
-   "srcH": 64
+   "srcH": 64,
+   "pair": 16,
+   "side": 0
   },
   {
    "file": "brow-034.webp",
    "w": 160,
    "h": 62,
    "srcW": 160,
-   "srcH": 62
+   "srcH": 62,
+   "pair": 16,
+   "side": 1
   },
   {
    "file": "brow-035.webp",
    "w": 151,
    "h": 57,
    "srcW": 151,
-   "srcH": 57
+   "srcH": 57,
+   "pair": 17,
+   "side": 0
   },
   {
    "file": "brow-036.webp",
    "w": 150,
    "h": 56,
    "srcW": 150,
-   "srcH": 56
+   "srcH": 56,
+   "pair": 17,
+   "side": 1
   },
   {
    "file": "brow-037.webp",
    "w": 153,
    "h": 57,
    "srcW": 153,
-   "srcH": 57
+   "srcH": 57,
+   "pair": 18,
+   "side": 0
   },
   {
    "file": "brow-038.webp",
    "w": 154,
    "h": 57,
    "srcW": 154,
-   "srcH": 57
+   "srcH": 57,
+   "pair": 18,
+   "side": 1
   },
   {
    "file": "brow-039.webp",
    "w": 154,
    "h": 59,
    "srcW": 154,
-   "srcH": 59
+   "srcH": 59,
+   "pair": 19,
+   "side": 0
   },
   {
    "file": "brow-040.webp",
    "w": 156,
    "h": 59,
    "srcW": 156,
-   "srcH": 59
+   "srcH": 59,
+   "pair": 19,
+   "side": 1
   },
   {
    "file": "brow-041.webp",
    "w": 157,
    "h": 72,
    "srcW": 157,
-   "srcH": 72
+   "srcH": 72,
+   "pair": 20,
+   "side": 0
   },
   {
    "file": "brow-042.webp",
    "w": 158,
    "h": 72,
    "srcW": 158,
-   "srcH": 72
+   "srcH": 72,
+   "pair": 20,
+   "side": 1
   },
   {
    "file": "brow-043.webp",
    "w": 157,
    "h": 85,
    "srcW": 157,
-   "srcH": 85
+   "srcH": 85,
+   "pair": 21,
+   "side": 0
   },
   {
    "file": "brow-044.webp",
    "w": 155,
    "h": 84,
    "srcW": 155,
-   "srcH": 84
+   "srcH": 84,
+   "pair": 21,
+   "side": 1
   },
   {
    "file": "brow-045.webp",
    "w": 160,
    "h": 63,
    "srcW": 160,
-   "srcH": 63
+   "srcH": 63,
+   "pair": 22,
+   "side": 0
   },
   {
    "file": "brow-046.webp",
    "w": 159,
    "h": 63,
    "srcW": 159,
-   "srcH": 63
+   "srcH": 63,
+   "pair": 22,
+   "side": 1
   },
   {
    "file": "brow-047.webp",
    "w": 157,
    "h": 71,
    "srcW": 157,
-   "srcH": 71
+   "srcH": 71,
+   "pair": 23,
+   "side": 0
   },
   {
    "file": "brow-048.webp",
    "w": 160,
    "h": 69,
    "srcW": 160,
-   "srcH": 69
+   "srcH": 69,
+   "pair": 23,
+   "side": 1
   },
   {
    "file": "brow-049.webp",
    "w": 152,
    "h": 72,
    "srcW": 152,
-   "srcH": 72
+   "srcH": 72,
+   "pair": 24,
+   "side": 0
   },
   {
    "file": "brow-050.webp",
    "w": 151,
    "h": 70,
    "srcW": 151,
-   "srcH": 70
+   "srcH": 70,
+   "pair": 24,
+   "side": 1
   },
   {
    "file": "brow-051.webp",
    "w": 156,
    "h": 56,
    "srcW": 156,
-   "srcH": 56
+   "srcH": 56,
+   "pair": 25,
+   "side": 0
   },
   {
    "file": "brow-052.webp",
    "w": 156,
    "h": 55,
    "srcW": 156,
-   "srcH": 55
+   "srcH": 55,
+   "pair": 25,
+   "side": 1
   },
   {
    "file": "brow-053.webp",
    "w": 154,
    "h": 85,
    "srcW": 154,
-   "srcH": 85
+   "srcH": 85,
+   "pair": 26,
+   "side": 0
   },
   {
    "file": "brow-054.webp",
    "w": 154,
    "h": 85,
    "srcW": 154,
-   "srcH": 85
+   "srcH": 85,
+   "pair": 26,
+   "side": 1
   },
   {
    "file": "brow-055.webp",
    "w": 127,
    "h": 57,
    "srcW": 127,
-   "srcH": 57
+   "srcH": 57,
+   "pair": 27,
+   "side": 0
   },
   {
    "file": "brow-056.webp",
    "w": 126,
    "h": 57,
    "srcW": 126,
-   "srcH": 57
+   "srcH": 57,
+   "pair": 27,
+   "side": 1
   },
   {
    "file": "brow-057.webp",
    "w": 163,
    "h": 67,
    "srcW": 163,
-   "srcH": 67
+   "srcH": 67,
+   "pair": 28,
+   "side": 0
   },
   {
    "file": "brow-058.webp",
    "w": 163,
    "h": 67,
    "srcW": 163,
-   "srcH": 67
+   "srcH": 67,
+   "pair": 28,
+   "side": 1
   },
   {
    "file": "brow-059.webp",
    "w": 157,
    "h": 95,
    "srcW": 157,
-   "srcH": 95
+   "srcH": 95,
+   "pair": 29,
+   "side": 0
   },
   {
    "file": "brow-060.webp",
    "w": 158,
    "h": 95,
    "srcW": 158,
-   "srcH": 95
+   "srcH": 95,
+   "pair": 29,
+   "side": 1
   },
   {
    "file": "brow-061.webp",
    "w": 158,
    "h": 77,
    "srcW": 158,
-   "srcH": 77
+   "srcH": 77,
+   "pair": 30,
+   "side": 0
   },
   {
    "file": "brow-062.webp",
    "w": 157,
    "h": 76,
    "srcW": 157,
-   "srcH": 76
+   "srcH": 76,
+   "pair": 30,
+   "side": 1
   },
   {
    "file": "brow-063.webp",
    "w": 151,
    "h": 85,
    "srcW": 151,
-   "srcH": 85
+   "srcH": 85,
+   "pair": 31,
+   "side": 0
   },
   {
    "file": "brow-064.webp",
    "w": 152,
    "h": 84,
    "srcW": 152,
-   "srcH": 84
+   "srcH": 84,
+   "pair": 31,
+   "side": 1
   },
   {
    "file": "brow-065.webp",
    "w": 154,
    "h": 111,
    "srcW": 154,
-   "srcH": 111
+   "srcH": 111,
+   "pair": 32,
+   "side": 0
   },
   {
    "file": "brow-066.webp",
    "w": 154,
    "h": 111,
    "srcW": 154,
-   "srcH": 111
+   "srcH": 111,
+   "pair": 32,
+   "side": 1
   },
   {
    "file": "brow-067.webp",
    "w": 152,
    "h": 111,
    "srcW": 152,
-   "srcH": 111
+   "srcH": 111,
+   "pair": 33,
+   "side": 0
   },
   {
    "file": "brow-068.webp",
    "w": 153,
    "h": 112,
    "srcW": 153,
-   "srcH": 112
+   "srcH": 112,
+   "pair": 33,
+   "side": 1
   },
   {
    "file": "brow-069.webp",
    "w": 336,
    "h": 158,
    "srcW": 336,
-   "srcH": 158
+   "srcH": 158,
+   "pair": 34,
+   "side": 0
   },
   {
    "file": "brow-070.webp",
    "w": 337,
    "h": 159,
    "srcW": 337,
-   "srcH": 159
+   "srcH": 159,
+   "pair": 34,
+   "side": 1
   },
   {
    "file": "brow-071.webp",
    "w": 144,
    "h": 70,
    "srcW": 144,
-   "srcH": 70
+   "srcH": 70,
+   "pair": 35,
+   "side": 0
   },
   {
    "file": "brow-072.webp",
    "w": 154,
    "h": 80,
    "srcW": 154,
-   "srcH": 80
+   "srcH": 80,
+   "pair": 35,
+   "side": 1
   },
   {
    "file": "brow-073.webp",
    "w": 157,
    "h": 76,
    "srcW": 157,
-   "srcH": 76
+   "srcH": 76,
+   "pair": 36,
+   "side": 0
   },
   {
    "file": "brow-074.webp",
    "w": 158,
    "h": 75,
    "srcW": 158,
-   "srcH": 75
+   "srcH": 75,
+   "pair": 36,
+   "side": 1
   },
   {
    "file": "brow-075.webp",
    "w": 165,
    "h": 78,
    "srcW": 165,
-   "srcH": 78
+   "srcH": 78,
+   "pair": 37,
+   "side": 0
   },
   {
    "file": "brow-076.webp",
    "w": 166,
    "h": 78,
    "srcW": 166,
-   "srcH": 78
+   "srcH": 78,
+   "pair": 37,
+   "side": 1
   },
   {
    "file": "brow-077.webp",
    "w": 159,
    "h": 85,
    "srcW": 159,
-   "srcH": 85
+   "srcH": 85,
+   "pair": 38,
+   "side": 0
   },
   {
    "file": "brow-078.webp",
    "w": 159,
    "h": 86,
    "srcW": 159,
-   "srcH": 86
+   "srcH": 86,
+   "pair": 38,
+   "side": 1
   },
   {
    "file": "brow-079.webp",
    "w": 158,
    "h": 73,
    "srcW": 158,
-   "srcH": 73
+   "srcH": 73,
+   "pair": 39,
+   "side": 0
   },
   {
    "file": "brow-080.webp",
    "w": 156,
    "h": 73,
    "srcW": 156,
-   "srcH": 73
+   "srcH": 73,
+   "pair": 39,
+   "side": 1
   },
   {
    "file": "brow-081.webp",
    "w": 159,
    "h": 74,
    "srcW": 159,
-   "srcH": 74
+   "srcH": 74,
+   "pair": 40,
+   "side": 0
   },
   {
    "file": "brow-082.webp",
    "w": 159,
    "h": 74,
    "srcW": 159,
-   "srcH": 74
+   "srcH": 74,
+   "pair": 40,
+   "side": 1
   },
   {
    "file": "brow-083.webp",
    "w": 155,
    "h": 80,
    "srcW": 155,
-   "srcH": 80
+   "srcH": 80,
+   "pair": 41,
+   "side": 0
   },
   {
    "file": "brow-084.webp",
    "w": 156,
    "h": 80,
    "srcW": 156,
-   "srcH": 80
+   "srcH": 80,
+   "pair": 41,
+   "side": 1
   },
   {
    "file": "brow-085.webp",
    "w": 157,
    "h": 74,
    "srcW": 157,
-   "srcH": 74
+   "srcH": 74,
+   "pair": 42,
+   "side": 0
   },
   {
    "file": "brow-086.webp",
    "w": 157,
    "h": 74,
    "srcW": 157,
-   "srcH": 74
+   "srcH": 74,
+   "pair": 42,
+   "side": 1
   },
   {
    "file": "brow-087.webp",
    "w": 157,
    "h": 71,
    "srcW": 157,
-   "srcH": 71
+   "srcH": 71,
+   "pair": 43,
+   "side": 0
   },
   {
    "file": "brow-088.webp",
    "w": 159,
    "h": 72,
    "srcW": 159,
-   "srcH": 72
+   "srcH": 72,
+   "pair": 43,
+   "side": 1
   },
   {
    "file": "brow-089.webp",
    "w": 157,
    "h": 77,
    "srcW": 157,
-   "srcH": 77
+   "srcH": 77,
+   "pair": 44,
+   "side": 0
   },
   {
    "file": "brow-090.webp",
    "w": 157,
    "h": 77,
    "srcW": 157,
-   "srcH": 77
+   "srcH": 77,
+   "pair": 44,
+   "side": 1
   }
  ],
  "eye": [
@@ -835,532 +997,666 @@
    "w": 181,
    "h": 144,
    "srcW": 181,
-   "srcH": 144
+   "srcH": 144,
+   "pair": 1,
+   "side": 0
   },
   {
    "file": "eye-002.webp",
    "w": 182,
    "h": 144,
    "srcW": 182,
-   "srcH": 144
+   "srcH": 144,
+   "pair": 1,
+   "side": 1
   },
   {
    "file": "eye-003.webp",
    "w": 150,
    "h": 105,
    "srcW": 150,
-   "srcH": 105
+   "srcH": 105,
+   "pair": 2,
+   "side": 0
   },
   {
    "file": "eye-004.webp",
    "w": 148,
    "h": 105,
    "srcW": 148,
-   "srcH": 105
+   "srcH": 105,
+   "pair": 2,
+   "side": 1
   },
   {
    "file": "eye-005.webp",
    "w": 156,
    "h": 106,
    "srcW": 156,
-   "srcH": 106
+   "srcH": 106,
+   "pair": 3,
+   "side": 0
   },
   {
    "file": "eye-006.webp",
    "w": 156,
    "h": 105,
    "srcW": 156,
-   "srcH": 105
+   "srcH": 105,
+   "pair": 3,
+   "side": 1
   },
   {
    "file": "eye-007.webp",
    "w": 168,
    "h": 118,
    "srcW": 168,
-   "srcH": 118
+   "srcH": 118,
+   "pair": 4,
+   "side": 0
   },
   {
    "file": "eye-008.webp",
    "w": 165,
    "h": 118,
    "srcW": 165,
-   "srcH": 118
+   "srcH": 118,
+   "pair": 4,
+   "side": 1
   },
   {
    "file": "eye-009.webp",
    "w": 166,
    "h": 117,
    "srcW": 166,
-   "srcH": 117
+   "srcH": 117,
+   "pair": 5,
+   "side": 0
   },
   {
    "file": "eye-010.webp",
    "w": 169,
    "h": 118,
    "srcW": 169,
-   "srcH": 118
+   "srcH": 118,
+   "pair": 5,
+   "side": 1
   },
   {
    "file": "eye-011.webp",
    "w": 155,
    "h": 99,
    "srcW": 155,
-   "srcH": 99
+   "srcH": 99,
+   "pair": 6,
+   "side": 0
   },
   {
    "file": "eye-012.webp",
    "w": 157,
    "h": 98,
    "srcW": 157,
-   "srcH": 98
+   "srcH": 98,
+   "pair": 6,
+   "side": 1
   },
   {
    "file": "eye-013.webp",
    "w": 155,
    "h": 112,
    "srcW": 155,
-   "srcH": 112
+   "srcH": 112,
+   "pair": 7,
+   "side": 0
   },
   {
    "file": "eye-014.webp",
    "w": 155,
    "h": 111,
    "srcW": 155,
-   "srcH": 111
+   "srcH": 111,
+   "pair": 7,
+   "side": 1
   },
   {
    "file": "eye-015.webp",
    "w": 165,
    "h": 128,
    "srcW": 165,
-   "srcH": 128
+   "srcH": 128,
+   "pair": 8,
+   "side": 0
   },
   {
    "file": "eye-016.webp",
    "w": 165,
    "h": 128,
    "srcW": 165,
-   "srcH": 128
+   "srcH": 128,
+   "pair": 8,
+   "side": 1
   },
   {
    "file": "eye-017.webp",
    "w": 145,
    "h": 105,
    "srcW": 145,
-   "srcH": 105
+   "srcH": 105,
+   "pair": 9,
+   "side": 0
   },
   {
    "file": "eye-018.webp",
    "w": 146,
    "h": 106,
    "srcW": 146,
-   "srcH": 106
+   "srcH": 106,
+   "pair": 9,
+   "side": 1
   },
   {
    "file": "eye-019.webp",
    "w": 141,
    "h": 137,
    "srcW": 141,
-   "srcH": 137
+   "srcH": 137,
+   "pair": 10,
+   "side": 0
   },
   {
    "file": "eye-020.webp",
    "w": 142,
    "h": 134,
    "srcW": 142,
-   "srcH": 134
+   "srcH": 134,
+   "pair": 10,
+   "side": 1
   },
   {
    "file": "eye-021.webp",
    "w": 160,
    "h": 154,
    "srcW": 160,
-   "srcH": 154
+   "srcH": 154,
+   "pair": 11,
+   "side": 0
   },
   {
    "file": "eye-022.webp",
    "w": 161,
    "h": 153,
    "srcW": 161,
-   "srcH": 153
+   "srcH": 153,
+   "pair": 11,
+   "side": 1
   },
   {
    "file": "eye-023.webp",
    "w": 136,
    "h": 135,
    "srcW": 136,
-   "srcH": 135
+   "srcH": 135,
+   "pair": 12,
+   "side": 0
   },
   {
    "file": "eye-024.webp",
    "w": 135,
    "h": 135,
    "srcW": 135,
-   "srcH": 135
+   "srcH": 135,
+   "pair": 12,
+   "side": 1
   },
   {
    "file": "eye-025.webp",
    "w": 130,
    "h": 82,
    "srcW": 130,
-   "srcH": 82
-  },
-  {
-   "file": "eye-026.webp",
-   "w": 193,
-   "h": 187,
-   "srcW": 193,
-   "srcH": 187
-  },
-  {
-   "file": "eye-027.webp",
-   "w": 192,
-   "h": 189,
-   "srcW": 192,
-   "srcH": 189
+   "srcH": 82,
+   "pair": 13,
+   "side": 0
   },
   {
    "file": "eye-028.webp",
    "w": 131,
    "h": 83,
    "srcW": 131,
-   "srcH": 83
+   "srcH": 83,
+   "pair": 13,
+   "side": 1
+  },
+  {
+   "file": "eye-026.webp",
+   "w": 193,
+   "h": 187,
+   "srcW": 193,
+   "srcH": 187,
+   "pair": 14,
+   "side": 0
+  },
+  {
+   "file": "eye-027.webp",
+   "w": 192,
+   "h": 189,
+   "srcW": 192,
+   "srcH": 189,
+   "pair": 14,
+   "side": 1
   },
   {
    "file": "eye-029.webp",
    "w": 172,
    "h": 150,
    "srcW": 172,
-   "srcH": 150
+   "srcH": 150,
+   "pair": 15,
+   "side": 0
   },
   {
    "file": "eye-030.webp",
    "w": 169,
    "h": 150,
    "srcW": 169,
-   "srcH": 150
+   "srcH": 150,
+   "pair": 15,
+   "side": 1
   },
   {
    "file": "eye-031.webp",
    "w": 157,
    "h": 100,
    "srcW": 157,
-   "srcH": 100
+   "srcH": 100,
+   "pair": 16,
+   "side": 0
   },
   {
    "file": "eye-032.webp",
    "w": 157,
    "h": 101,
    "srcW": 157,
-   "srcH": 101
+   "srcH": 101,
+   "pair": 16,
+   "side": 1
   },
   {
    "file": "eye-033.webp",
    "w": 134,
    "h": 99,
    "srcW": 134,
-   "srcH": 99
+   "srcH": 99,
+   "pair": 17,
+   "side": 0
   },
   {
    "file": "eye-034.webp",
    "w": 80,
    "h": 95,
    "srcW": 80,
-   "srcH": 95
+   "srcH": 95,
+   "pair": 17,
+   "side": 1
   },
   {
    "file": "eye-035.webp",
    "w": 175,
    "h": 132,
    "srcW": 175,
-   "srcH": 132
+   "srcH": 132,
+   "pair": 18,
+   "side": 0
   },
   {
    "file": "eye-036.webp",
    "w": 173,
    "h": 131,
    "srcW": 173,
-   "srcH": 131
+   "srcH": 131,
+   "pair": 18,
+   "side": 1
   },
   {
    "file": "eye-037.webp",
    "w": 160,
    "h": 112,
    "srcW": 160,
-   "srcH": 112
+   "srcH": 112,
+   "pair": 19,
+   "side": 0
   },
   {
    "file": "eye-038.webp",
    "w": 159,
    "h": 113,
    "srcW": 159,
-   "srcH": 113
+   "srcH": 113,
+   "pair": 19,
+   "side": 1
   },
   {
    "file": "eye-039.webp",
    "w": 130,
    "h": 109,
    "srcW": 130,
-   "srcH": 109
+   "srcH": 109,
+   "pair": 20,
+   "side": 0
   },
   {
    "file": "eye-040.webp",
    "w": 84,
    "h": 84,
    "srcW": 84,
-   "srcH": 84
+   "srcH": 84,
+   "pair": 20,
+   "side": 1
   },
   {
    "file": "eye-041.webp",
    "w": 216,
    "h": 139,
    "srcW": 216,
-   "srcH": 139
+   "srcH": 139,
+   "pair": 21,
+   "side": 0
   },
   {
    "file": "eye-042.webp",
    "w": 216,
    "h": 138,
    "srcW": 216,
-   "srcH": 138
+   "srcH": 138,
+   "pair": 21,
+   "side": 1
   },
   {
    "file": "eye-043.webp",
    "w": 162,
    "h": 126,
    "srcW": 162,
-   "srcH": 126
+   "srcH": 126,
+   "pair": 22,
+   "side": 0
   },
   {
    "file": "eye-044.webp",
    "w": 162,
    "h": 127,
    "srcW": 162,
-   "srcH": 127
-  },
-  {
-   "file": "eye-045.webp",
-   "w": 157,
-   "h": 98,
-   "srcW": 157,
-   "srcH": 98
+   "srcH": 127,
+   "pair": 22,
+   "side": 1
   },
   {
    "file": "eye-046.webp",
    "w": 208,
    "h": 123,
    "srcW": 208,
-   "srcH": 123
+   "srcH": 123,
+   "pair": 23,
+   "side": 0
   },
   {
    "file": "eye-047.webp",
    "w": 208,
    "h": 126,
    "srcW": 208,
-   "srcH": 126
+   "srcH": 126,
+   "pair": 23,
+   "side": 1
   },
   {
    "file": "eye-048.webp",
    "w": 147,
    "h": 127,
    "srcW": 147,
-   "srcH": 127
+   "srcH": 127,
+   "pair": 24,
+   "side": 0
   },
   {
    "file": "eye-049.webp",
    "w": 149,
    "h": 126,
    "srcW": 149,
-   "srcH": 126
+   "srcH": 126,
+   "pair": 24,
+   "side": 1
   },
   {
    "file": "eye-050.webp",
    "w": 131,
    "h": 109,
    "srcW": 131,
-   "srcH": 109
+   "srcH": 109,
+   "pair": 25,
+   "side": 0
   },
   {
    "file": "eye-051.webp",
    "w": 107,
    "h": 89,
    "srcW": 107,
-   "srcH": 89
+   "srcH": 89,
+   "pair": 25,
+   "side": 1
   },
   {
    "file": "eye-052.webp",
    "w": 197,
    "h": 127,
    "srcW": 197,
-   "srcH": 127
+   "srcH": 127,
+   "pair": 26,
+   "side": 0
   },
   {
    "file": "eye-053.webp",
    "w": 196,
    "h": 128,
    "srcW": 196,
-   "srcH": 128
+   "srcH": 128,
+   "pair": 26,
+   "side": 1
   },
   {
    "file": "eye-054.webp",
    "w": 162,
    "h": 114,
    "srcW": 162,
-   "srcH": 114
+   "srcH": 114,
+   "pair": 27,
+   "side": 0
   },
   {
    "file": "eye-055.webp",
    "w": 162,
    "h": 113,
    "srcW": 162,
-   "srcH": 113
+   "srcH": 113,
+   "pair": 27,
+   "side": 1
   },
   {
    "file": "eye-056.webp",
    "w": 152,
    "h": 109,
    "srcW": 152,
-   "srcH": 109
+   "srcH": 109,
+   "pair": 28,
+   "side": 0
   },
   {
    "file": "eye-057.webp",
    "w": 152,
    "h": 108,
    "srcW": 152,
-   "srcH": 108
+   "srcH": 108,
+   "pair": 28,
+   "side": 1
   },
   {
    "file": "eye-058.webp",
    "w": 177,
    "h": 147,
    "srcW": 177,
-   "srcH": 147
+   "srcH": 147,
+   "pair": 29,
+   "side": 0
   },
   {
    "file": "eye-059.webp",
    "w": 176,
    "h": 143,
    "srcW": 176,
-   "srcH": 143
+   "srcH": 143,
+   "pair": 29,
+   "side": 1
   },
   {
    "file": "eye-060.webp",
    "w": 144,
    "h": 180,
    "srcW": 144,
-   "srcH": 180
+   "srcH": 180,
+   "pair": 30,
+   "side": 0
   },
   {
    "file": "eye-061.webp",
    "w": 145,
    "h": 179,
    "srcW": 145,
-   "srcH": 179
-  },
-  {
-   "file": "eye-062.webp",
-   "w": 329,
-   "h": 155,
-   "srcW": 329,
-   "srcH": 155
+   "srcH": 179,
+   "pair": 30,
+   "side": 1
   },
   {
    "file": "eye-063.webp",
    "w": 157,
    "h": 127,
    "srcW": 157,
-   "srcH": 127
+   "srcH": 127,
+   "pair": 31,
+   "side": 0
   },
   {
    "file": "eye-064.webp",
    "w": 157,
    "h": 127,
    "srcW": 157,
-   "srcH": 127
+   "srcH": 127,
+   "pair": 31,
+   "side": 1
   },
   {
    "file": "eye-065.webp",
    "w": 165,
    "h": 122,
    "srcW": 165,
-   "srcH": 122
+   "srcH": 122,
+   "pair": 32,
+   "side": 0
   },
   {
    "file": "eye-066.webp",
    "w": 166,
    "h": 125,
    "srcW": 166,
-   "srcH": 125
+   "srcH": 125,
+   "pair": 32,
+   "side": 1
   },
   {
    "file": "eye-067.webp",
    "w": 138,
    "h": 139,
    "srcW": 138,
-   "srcH": 139
+   "srcH": 139,
+   "pair": 33,
+   "side": 0
   },
   {
    "file": "eye-068.webp",
    "w": 138,
    "h": 139,
    "srcW": 138,
-   "srcH": 139
+   "srcH": 139,
+   "pair": 33,
+   "side": 1
   },
   {
    "file": "eye-069.webp",
    "w": 153,
    "h": 159,
    "srcW": 153,
-   "srcH": 159
+   "srcH": 159,
+   "pair": 34,
+   "side": 0
   },
   {
    "file": "eye-070.webp",
    "w": 152,
    "h": 159,
    "srcW": 152,
-   "srcH": 159
+   "srcH": 159,
+   "pair": 34,
+   "side": 1
   },
   {
    "file": "eye-071.webp",
    "w": 172,
    "h": 118,
    "srcW": 172,
-   "srcH": 118
+   "srcH": 118,
+   "pair": 35,
+   "side": 0
   },
   {
    "file": "eye-072.webp",
    "w": 171,
    "h": 119,
    "srcW": 171,
-   "srcH": 119
+   "srcH": 119,
+   "pair": 35,
+   "side": 1
   },
   {
    "file": "eye-073.webp",
    "w": 145,
    "h": 125,
    "srcW": 145,
-   "srcH": 125
+   "srcH": 125,
+   "pair": 36,
+   "side": 0
   },
   {
    "file": "eye-074.webp",
    "w": 145,
    "h": 126,
    "srcW": 145,
-   "srcH": 126
+   "srcH": 126,
+   "pair": 36,
+   "side": 1
   },
   {
    "file": "eye-075.webp",
    "w": 159,
    "h": 140,
    "srcW": 159,
-   "srcH": 140
+   "srcH": 140,
+   "pair": 37,
+   "side": 0
   },
   {
    "file": "eye-076.webp",
    "w": 160,
    "h": 140,
    "srcW": 160,
-   "srcH": 140
+   "srcH": 140,
+   "pair": 37,
+   "side": 1
   }
  ],
  "nose": [
